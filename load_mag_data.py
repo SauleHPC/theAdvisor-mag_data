@@ -3,9 +3,9 @@ from pymongo import MongoClient
 from Parse import parse_MAG_file, Paper
 
 # Setup MongoDB connection
-client = MongoClient('localhost', 27017)
-db = client['mag']
-collection = db['papers']
+client = MongoClient('localhost', 11111)
+db = client['theadvisor']
+collection = db['mag']
 
 # Define a global list to hold a batch of papers
 batch_of_papers = []
