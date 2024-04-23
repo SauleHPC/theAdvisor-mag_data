@@ -6,6 +6,7 @@ from Parse import parse_MAG_file, Paper
 client = MongoClient('localhost', 11111)
 db = client['theadvisor']
 collection = db['mag']
+db.mag.create_index([("paper_id", 1)])
 
 # Define a global list to hold a batch of papers
 batch_of_papers = []
